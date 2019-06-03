@@ -29,10 +29,19 @@
                 <input type="password"  id="password" name="password" placeholder="Password" required>
             </div>
 
+            <div class="form-group">
+                <input type="password" id="confirmation" name="confirmation" placeholder="Confirm your password" required>
+            </div>
+
             <?php
-            if (isset($_POST['submit']))
-            {echo"<div id='signup-success'>You've been signed up!</div>";
-            } ?>
+            if (isset($_POST['submit'])){
+                if ($_POST['password'] != $_POST['confirmation'])
+                {echo "<div is='wrong-password'>Please make sure both fields are the same!</div>";
+                }
+                else {echo"<div id='signup-success'>You've been signed up!</div>";
+                }
+            }
+            ?>
 
             <button type="submit" name="submit">Sign up</button>
 
@@ -67,5 +76,5 @@ if (isset($_POST['submit'])) {
     $json_file = fopen('data/data.json', 'w');
     fwrite($json_file, json_encode($new_user));
     fclose($json_file);
-    }
+}
 ?>
