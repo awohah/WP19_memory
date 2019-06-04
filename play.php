@@ -9,6 +9,8 @@
     <script src="js/play.js"></script>
 </head>
 <body>
+<?php echo '<a id="signout" href="index.php">Sign out</a><br>';
+?>
 <button id="play">Play memory</button>
 </body>
 </html>

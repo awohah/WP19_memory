@@ -64,5 +64,11 @@
 
 <script type="text/javascript" src="data/data.json"></script>
 
+<?php
+session_start();
+session_destroy();
+?>
+
 </html>
+
 
