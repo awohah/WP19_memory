@@ -17,6 +17,16 @@ body {
     font-family: "Open Sans";
 }
 
+#background{
+    background: url("https://res.cloudinary.com/nikola1970/image/upload/v1456692130/body-bg_ovz9eo.png") no-repeat center center fixed !important;
+}
+
+#play_background{
+    background: url("https://www.backgroundcheckall.com/wp-content/uploads/2017/12/2d-game-background-1.png") no-repeat center center fixed !important;
+}
+
+
+
 #container {
     text-align: center;
     width: 400px;
@@ -29,7 +39,7 @@ body {
 }
 
 
-button {
+button, .signout, .back {
     padding: 12px;
     border-radius: 30px;
     width: 275px;
@@ -54,14 +64,11 @@ button {
 
     transition: .3s;
     opacity: 0.7;
+    text-decoration: none;
 }
 
-button:hover {
+button:hover, .signout:hover, .back:hover {
     opacity: 1;
-}
-
-#signout{
-    color: red !important;
 }
 
 .signup {
@@ -73,18 +80,7 @@ button:hover {
     font-size: 12px;
 }
 
-#signout a:hover,
-#signout a:visited
-{
-    background-color: #3366FF;
-}
-
 /* MEMORY GAME */
-
-#background{
-
-    background: url("https://pngimage.net/wp-content/uploads/2018/06/professional-background-png-1.png") no-repeat center center fixed !important;
-}
 
 div#memory_board{
     background: black;
@@ -92,7 +88,7 @@ div#memory_board{
 }
 
 div#memory_board > div{
-    background: url(https://cleantotaal.nl/wp-content/uploads/2016/10/ruglogo.jpg);
+    background: url("https://cleantotaal.nl/wp-content/uploads/2016/10/ruglogo.jpg");
     background-size: cover ;
     background-position: center;
     border:#000 1px solid;
@@ -103,6 +99,11 @@ div#memory_board > div{
     padding:20px;
     font-size:64px;
     cursor:pointer;
+}
+
+#memory_board > div {
+    border-radius: 10px;
+    border: 3px solid black !important;
 }
 
 

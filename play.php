@@ -8,13 +8,13 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/play.js"></script>
 </head>
-<body>
+<body id="play_background">
 <?php
     session_start();
     if(empty($_SESSION['user'])){
         header('location: index.php');
     }else{
-        echo '<a id="signout" href="logout.php">Sign out</a>';
+        echo '<a class="signout" href="logout.php">Sign out</a>';
         echo '<h1>Welcome '.$_SESSION['user'].'</h1>';
     };
 ?>
