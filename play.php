@@ -14,7 +14,7 @@
     if(empty($_SESSION['user'])){
         header('location: index.php');
     }else{
-        echo '<a id="signout" href="index.php">Sign out</a>';
+        echo '<a id="signout" href="logout.php">Sign out</a>';
         echo '<h1>Welcome '.$_SESSION['user'].'</h1>';
     };
 ?>
