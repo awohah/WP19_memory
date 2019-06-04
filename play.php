@@ -9,7 +9,14 @@
     <script src="js/play.js"></script>
 </head>
 <body>
-<?php echo '<a id="signout" href="index.php">Sign out</a><br>';
+<?php
+    session_start();
+    if(empty($_SESSION['user'])){
+        header('location: index.php');
+    }else{
+        echo '<a id="signout" href="index.php">Sign out</a>';
+        echo '<h1>Welcome '.$_SESSION['user'].'</h1>';
+    };
 ?>
 <button id="play">Play memory</button>
 </body>
