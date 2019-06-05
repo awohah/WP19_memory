@@ -60,7 +60,6 @@ if (isset($_POST['submit'])) {
 // get json data with user details
     $json_file = file_get_contents("data/chat.json");
     $new_message = json_decode($json_file, true);
-    $new_message = array_reverse($new_message);
     array_push($new_message, [
         'user' => $_SESSION['user'],
         'text' => $_POST['message'],
