@@ -15,10 +15,17 @@
         header('location: index.php');
     }else{
         echo '<a class="signout" href="logout.php">Sign out</a>';
-        echo '<h1>Welcome '.$_SESSION['user'].'</h1>';
+        echo '<h1>Welcome '.$_SESSION['user'].'!</h1>';
+        echo '<h3>Say hello to your friends and play ofcourse :)</h3>';
     };
 ?>
-<button id="play">Play memory</button>
+<h3 class="selectgame">Select game:</h3>
+<a id="play" class="signout" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a>
+<?php
+    if (isset($_GET['game'])) {
+        echo"<div class='full'> Games are full!</div>";
+    }
+?>
 
 <div id="chat-container">
     <div id="chat">
@@ -40,10 +47,6 @@
             </div>
         </div>
     </div>
-
-    <body id="scroller">
-    <div id="anchor"></div>
-    </body>
     <form id="chat" method="POST">
         <input type="hidden" name="name" value="<?php echo $_SESSION['user']?>">
         <textarea id="message" name="message" placeholder="Enter message" required></textarea>

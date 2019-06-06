@@ -17,6 +17,18 @@ body {
     font-family: "Open Sans";
 }
 
+h1, h3{
+    text-align: center;
+}
+
+.selectgame{
+    font-size: 16px;
+    color: red;
+    text-align: left;
+    margin: 10px;
+    padding: 10px 0;
+}
+
 #background{
     margin-top: 20px;
     background: url("https://res.cloudinary.com/nikola1970/image/upload/v1456692130/body-bg_ovz9eo.png") no-repeat center center fixed !important;
@@ -82,6 +94,19 @@ button:hover, .signout:hover, .back:hover {
     font-size: 12px;
 }
 
+/* FULL GAME ALERT */
+
+.full{
+    padding: 20px;
+    background-color: red;
+    color: white;
+    width: 10vw;
+    border-radius: 20px;
+    border: 1px solid;
+    text-align: center;
+    margin: 20px 20px 0px 0px;
+}
+
 /* CHAT BOX */
 
 #chat-container{
@@ -102,7 +127,7 @@ button:hover, .signout:hover, .back:hover {
 #chat-box{
     display: flex;
     flex-direction: column-reverse;
-    height: 30vh;
+    height: 20vh;
     overflow-y:auto;
 }
 
