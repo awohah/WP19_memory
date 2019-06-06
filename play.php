@@ -20,7 +20,8 @@
     };
 ?>
 <h3 class="selectgame">Select game:</h3>
-<a id="play" class="signout" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a>
+<a id="play" class="signout" >Play memory!</a>
+
 <?php
     if (isset($_GET['game'])) {
         echo"<div class='full'> Games are full!</div>";
