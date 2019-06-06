@@ -1,6 +1,6 @@
 <?php
 if (isset($_POST['call_now'])){
-	$tiles = array(1,1,2,2,3,3);
+	$tiles = array(1,1,2,2,3,3,4,4,5,5,6,6);
 	shuffle($tiles);
 
 	// Read cards
