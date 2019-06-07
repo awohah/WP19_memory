@@ -13,7 +13,7 @@ function print_cards() {
         game_container.append(data.html);
         $('.tile').click(function () {
             makeVisible(this);
-        }); 
+        });
     });
 }
 

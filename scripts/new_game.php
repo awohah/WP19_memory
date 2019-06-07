@@ -4,23 +4,32 @@ if (isset($_POST['call_now'])){
 	shuffle($tiles);
 
 	// Read cards
- 	$json_file_cards = file_get_contents("../data/cards.json");
+ 	$json_file_cards = file_get_contents("../data/game.json");
  	$cards = json_decode($json_file_cards, true);
-	
-	// Make all cards invisible
-	foreach ($cards as $key => $value){
-		$cards[$key]['visibility'] = "invisible";
-	};
+
+    // Make all cards invisible
+    foreach ($cards as $item){
+        if($item["id"]==0){
+            foreach($item["cards"] as $value){
+                $value["visibility"]="invisible";
+
+            }
+        }
+    };
 
 	// Shuffle pictures
-	$i = 0;
-	foreach ($cards as $key => $value){
-		$cards[$key]['picture'] = $tiles[$i];
-		$i++;
-	};
+    $i = 0;
+    foreach ($cards as $item){
+        if($item["id"]==0){
+            foreach($item["cards"] as $value){
+                $value['picture'] = $tiles[$i];
+                $i++;
+            }
+        }
+    }
 
 	// Save to external file
-	$json_file_cards = fopen('../data/cards.json', 'w');
+	$json_file_cards = fopen('../data/game.json', 'w');
 	fwrite($json_file_cards, json_encode($cards));
 	fclose($json_file_cards);
 }

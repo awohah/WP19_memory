@@ -21,6 +21,7 @@
 ?>
 <h3 class="selectgame">Select game:</h3>
 <a id="play" class="signout" >Play memory!</a>
+<a class="signout" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory 111!</a>
 
 <?php
     if (isset($_GET['game'])) {
