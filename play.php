@@ -20,8 +20,7 @@
     };
 ?>
 <h3 class="selectgame">Select game:</h3>
-<a id="play" class="signout" >Play memory!</a>
-<a class="signout" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory 111!</a>
+<a class="signout" id="playmemory" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a>
 
 <?php
     if (isset($_GET['game'])) {
@@ -51,7 +50,7 @@
     </div>
     <form id="chat" method="POST">
         <input type="hidden" name="name" value="<?php echo $_SESSION['user']?>">
-        <textarea id="message" name="message" placeholder="Enter message" required></textarea>
+        <textarea  rows="4" cols="50" id="message"  name="message" placeholder="Type a message" required></textarea>
         <input id="submit-text" type="submit" name="submit" value="send">
 
     </form>
@@ -68,7 +67,7 @@ if (isset($_POST['submit'])) {
     array_push($new_message, [
         'user' => $_SESSION['user'],
         'text' => $_POST['message'],
-        'time' => date("h:i:sa")
+        'time' => date("g:i:s A")
     ]);
 // Save to external file
     $json_file = fopen('data/chat.json', 'w');

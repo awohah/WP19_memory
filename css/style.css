@@ -21,14 +21,6 @@ h1, h3{
     text-align: center;
 }
 
-.selectgame{
-    font-size: 16px;
-    color: red;
-    text-align: left;
-    margin: 10px;
-    padding: 10px 0;
-}
-
 #background{
     margin-top: 20px;
     background: url("https://res.cloudinary.com/nikola1970/image/upload/v1456692130/body-bg_ovz9eo.png") no-repeat center center fixed !important;
@@ -37,6 +29,17 @@ h1, h3{
 #play_background{
     margin-top: 20px;
     background: url("https://www.backgroundcheckall.com/wp-content/uploads/2017/12/2d-game-background-1.png") no-repeat center center fixed !important;
+}
+
+#playmemory {
+    padding: 50px!important;
+    background: rgb(11, 167, 201);
+    font-size: 30px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    margin: -60px 10px 10px 5px;
+    text-shadow: 1px 1px 2px beige;
 }
 
 
@@ -109,26 +112,29 @@ button:hover, .signout:hover, .back:hover {
 
 /* CHAT BOX */
 
-#chat-container{
-    margin: 0;
+#chat-container {
+    margin: 0px auto;
     padding: 0;
-    border: 0;
+    width: 50vw;
+    border-radius: 30px;
+
+
 }
 
-#chat{
-    width: 40%;
-    background: white;
-    margin: 10px auto;
-    padding: 20px;
-    border: 1px solid;
-    border-radius: 25px;
+#chat {
+    padding: 10px;
+    border-radius: 30px;
+    margin: 5px;
 }
 
-#chat-box{
+
+
+#chat-box {
     display: flex;
     flex-direction: column-reverse;
-    height: 20vh;
-    overflow-y:auto;
+    max-height: 47vh;
+    overflow-y: auto;
+    background: rgb(199, 233, 238, 0.1);
 }
 
 #chat-data{
@@ -136,15 +142,48 @@ button:hover, .signout:hover, .back:hover {
     width: 80%;
     padding: 5px;
     margin-bottom: 5px;
+    overflow: auto;
 }
 
-#message{
+#row-data {
+    background: white;
+    padding: 10px;
+    margin: 20px 10px 10px 10px;
+    border-radius: 20px;
+    margin-left: 1%;
+    margin-right: 20%;
+}
+
+.text_user {
+    background: #DCF8C6!important;
+    margin-left: 20%!important;
+    margin-right: 1%!important;
+}
+
+#message {
     display: table;
     margin: 0 auto;
-    width: 80%;
-    height: 15vh;
-    border: 1px solid grey;
-    border-radius: 5px;
+    width: 60%;
+    height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    background: rgb(199, 233, 238, 0.7);
+}
+
+textarea::placeholder {
+    color: grey;
+    font-size: 16px;
+}
+
+textarea:focus {
+    border: none;
+    background-color: white;
+    font-size: 16px;
 }
 
 #submit-text{
@@ -159,14 +198,39 @@ button:hover, .signout:hover, .back:hover {
     cursor: pointer;
 }
 
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background:rgb(160, 194, 64, 0.6);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:#0BA7C9;}
+
 #name-text{
-   color: green;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
     margin-right: 15px;
 }
 
 #text-msg{
-    color: blue;
+    color: black;
+    display: block;
+    overflow: auto;
+    padding: -10px;
+    font-size: 13px;
+
 }
+
 
 #time{
     float: right;
