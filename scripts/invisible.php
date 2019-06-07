@@ -5,11 +5,11 @@ if (isset($_POST['tile_id'])){
  	$cards = json_decode($json_file, true);
 	
 	// Make tile invisible
-    foreach ($cards as $item) {
-        if ($item["id"] == 0) {
-            foreach ($item["cards"] as $value) {
+    foreach ($cards as $game => $game_value) {
+        if ($game_value['id'] == 0){
+            foreach ($game_value["cards"] as $key => $value) {
                 if ($value['tile_id'] == $_POST['tile_id']) {
-                    $value['visibility'] = "invisible";
+                    $cards[$game]["cards"][$key]['visibility'] = 'invisible';
                 }
             }
         }
