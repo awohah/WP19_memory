@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.signout{
+    float: right;
+    width: 80px!important;
+    text-align: center;
+}
+
 #wrapper{
     width: 50vw;
     margin: 0 auto;
@@ -33,15 +46,47 @@ h1, h3{
 
 #playmemory {
     padding: 50px!important;
-    background: rgb(11, 167, 201);
+    background: #1197BE;
     font-size: 30px;
     color: black;
     text-align: left;
     font-weight: bold;
     margin: -60px 10px 10px 5px;
     text-shadow: 1px 1px 2px beige;
+    position: relative;
+    animation-name: shake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    cursor: pointer;
 }
 
+@keyframes shakeAnim {
+    0% {left: 0}
+    1% {left: -3px}
+    2% {left: 5px}
+    3% {left: -8px}
+    4% {left: 8px}
+    5% {left: -5px}
+    6% {left: 3px}
+    7% {left: 0}
+}
+
+@keyframes shake {
+    0% {left: 0}
+    1% {left: -3px}
+    2% {left: 5px}
+    3% {left: -8px}
+    4% {left: 8px}
+    5% {left: -5px}
+    6% {left: 3px}
+    7% {left: 0}
+}
+
+#playmemory:hover {
+    background-color: rgb(86, 187, 38, 0.7);
+    font-size: 35px;
+}
 
 
 #container {
@@ -56,7 +101,7 @@ h1, h3{
 }
 
 
-button, .signout, .back, #submit-text {
+button,.memory, .signout, .back, #submit-text {
     padding: 12px;
     border-radius: 30px;
     width: 275px;
@@ -122,9 +167,10 @@ button:hover, .signout:hover, .back:hover {
 }
 
 #chat {
-    padding: 10px;
     border-radius: 30px;
-    margin: 5px;
+    background: rgb(255, 255, 255, 0.2);
+    margin: 0;
+    padding: 30px;
 }
 
 
@@ -134,7 +180,7 @@ button:hover, .signout:hover, .back:hover {
     flex-direction: column-reverse;
     max-height: 47vh;
     overflow-y: auto;
-    background: rgb(199, 233, 238, 0.1);
+    overflow-x: hidden;
 }
 
 #chat-data{
@@ -196,18 +242,21 @@ button:hover, .signout:hover, .back:hover {
 
 #message {
     display: block;
-    margin: 0 auto;
-    height: 25px;
-    width: 60%;
-    border-radius: 15px;
+    float: left;
+    margin: 10px 0;
+    width: 80%;
     text-align: center;
-    padding: 10px;
     font-size: 16px;
+    padding: 15px;
+    height: 50px;
+    border-bottom-left-radius: 30px !important;
+    border-top-left-radius: 30px !important;
 }
 
 textarea {
     background: rgb(199, 233, 238, 0.7);
     border: none;
+    resize: none;
 }
 
 textarea::placeholder {
@@ -216,7 +265,7 @@ textarea::placeholder {
 }
 
 textarea:focus {
-    border: none;
+    border: none !important;
     background-color:  #DCF8C6;
     font-size: 16px;
 }
@@ -224,8 +273,13 @@ textarea:focus {
 #submit-text{
     font-size: 11px !important;
     margin: 10px auto -5px auto !important;
-    display: table !important;
-    width: 150px !important;
+    height: 50px;
+    float: left;
+    width: 20% !important;
+    border-bottom-right-radius:30px!important;
+    border-top-right-radius:30px!important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
 }
 
 #submit-text:hover{
@@ -234,7 +288,7 @@ textarea:focus {
 }
 
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
 }
 
 ::-webkit-scrollbar-track {
