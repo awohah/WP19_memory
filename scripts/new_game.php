@@ -8,21 +8,20 @@ if (isset($_POST['call_now'])){
  	$cards = json_decode($json_file_cards, true);
 
     // Make all cards invisible
-    foreach ($cards as $item){
-        if($item["id"]==0){
-            foreach($item["cards"] as $value){
-                $value["visibility"]="invisible";
-
+    foreach ($cards as $game => $game_value) {
+        if ($game_value['id'] == 0){
+            foreach ($game_value["cards"] as $key => $value) {
+                $cards[$game]["cards"][$key]['visibility'] = 'invisible';
             }
         }
     };
 
 	// Shuffle pictures
     $i = 0;
-    foreach ($cards as $item){
-        if($item["id"]==0){
-            foreach($item["cards"] as $value){
-                $value['picture'] = $tiles[$i];
+    foreach ($cards as $game => $game_value) {
+        if ($game_value['id'] == 0){
+            foreach ($game_value["cards"] as $key => $value) {
+                $cards[$game]["cards"][$key]['picture'] = $tiles[$i];
                 $i++;
             }
         }
