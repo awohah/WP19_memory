@@ -19,7 +19,6 @@
         echo '<h3>Say hello to your friends and play ofcourse :)</h3>';
     };
 ?>
-<h3 class="selectgame">Select game:</h3>
 <a class="signout" id="playmemory" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a>
 
 <?php
@@ -50,7 +49,7 @@
     </div>
     <form id="chat" method="POST">
         <input type="hidden" name="name" value="<?php echo $_SESSION['user']?>">
-        <textarea  rows="4" cols="50" id="message"  name="message" placeholder="Type a message" required></textarea>
+        <textarea rows="4" cols="50" id="message"  name="message" placeholder="Type a message" required></textarea>
         <input id="submit-text" type="submit" name="submit" value="send">
 
     </form>
