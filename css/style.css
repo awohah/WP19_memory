@@ -376,3 +376,13 @@ div#memory_board > div{
         width:15vw !important;
         height:15vw !important;
     }}
+
+@media only screen and (max-width: 768px) {
+    #chat {
+        float: left;
+        margin-right: 5px;
+    }
+    #playmemory {
+        clear: both;
+    }
+}
