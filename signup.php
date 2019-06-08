@@ -40,10 +40,10 @@
                 foreach ($users as $key => $value){
                     array_push($usernames, $value['user_name']);}
                     if (in_array($_POST['user'], $usernames)) {
-                        echo "<div is='taken_username'>The username you entered is already taken</div>";
+                        echo "<div id='taken_username'>The username you entered is already taken</div>";
                         }else{
                         if ($_POST['password'] != $_POST['confirmation'])
-                        {echo "<div is='wrong-password'>Please make sure both password fields are the same!</div>";
+                        {echo "<div id='wrong-password'>Please make sure both password fields are the same!</div>";
                         }
                         else {echo"<div id='signup-success'>You've been signed up!</div>";
                         }
