@@ -3,6 +3,7 @@
 $jsonString = file_get_contents('data/game.json');
 $data = json_decode($jsonString, true);
 $elementCount  = count($data);
+session_start();
 
 foreach ($data as $key => $value){
     if($value['amount'] < 1 ){
@@ -29,10 +30,6 @@ foreach ($data as $key => $value){
         $json_file = fopen('data/game.json', 'w');
         fwrite($json_file, json_encode($data));
         fclose($json_file);
-    }
-
-    if($elementCount>11){
-        header("Location: play.php?game=full");
     }
 }
 

@@ -2,6 +2,7 @@
 if (isset($_POST['call_now'])){
 	$tiles = array(1,1,2,2,3,3,4,4,5,5,6,6);
 	shuffle($tiles);
+    session_start();
 
 	// Read cards
  	$json_file_cards = file_get_contents("../data/game.json");
@@ -9,7 +10,7 @@ if (isset($_POST['call_now'])){
 
     // Make all cards invisible
     foreach ($cards as $game => $game_value) {
-        if ($game_value['id'] == 0){
+        if ($game_value["user1"] == ($_SESSION['user']) or $game_value["user2"] == ($_SESSION['user'])){
             foreach ($game_value["cards"] as $key => $value) {
                 $cards[$game]["cards"][$key]['visibility'] = 'invisible';
             }
