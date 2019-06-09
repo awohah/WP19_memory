@@ -20,14 +20,14 @@
 
             <div class="form-group">
                 <input type="text" id="user" name="user" placeholder="Username" required>
-                <div class="valid">Nice!</div>
-                <div class="invalid">Please fill in your username!</div>
+                <div class="valid" style="display: none;">Nice!</div>
+                <div class="invalid" style="display: none;">Please fill in your username!</div>
             </div>
 
             <div class="form-group">
                 <input type="password"  id="password" name="password" placeholder="Password" required>
-                <div class="valid">Check!</div>
-                <div class="invalid">Please fill in another password!</div>
+                <div class="valid" style="display: none;">Check!</div>
+                <div class="invalid" style="display: none;">Please fill in another password!</div>
             </div>
 
             <div class="form-group">
