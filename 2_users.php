@@ -10,10 +10,12 @@ foreach ($data as $key => $value){
         $id = $data[$key]['id'];
         $data[$key]['amount'] = $value['amount']+1;
         $data[$key]['user1'] = $_GET['user'];
-        header("Location: redirect2.php?id=$id");
+        $_SESSION['id'] = $id;
+        header("Location: redirect2.php");
 
     }elseif($value['amount'] < 2 ){
         $id = $data[$key]['id'];
+        $_SESSION['id'] = $id;
         $cards = file_get_contents('data/cards.json');
         $obj_cards = json_decode($cards);
 
