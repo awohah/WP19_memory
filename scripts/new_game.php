@@ -20,7 +20,7 @@ if (isset($_POST['call_now'])){
 	// Shuffle pictures
     $i = 0;
     foreach ($cards as $game => $game_value) {
-        if ($game_value['id'] == 0){
+        if ($game_value["user1"] == ($_SESSION['user']) or $game_value["user2"] == ($_SESSION['user'])){
             foreach ($game_value["cards"] as $key => $value) {
                 $cards[$game]["cards"][$key]['picture'] = $tiles[$i];
                 $i++;

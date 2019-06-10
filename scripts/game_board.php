@@ -6,6 +6,7 @@ if (isset($_POST['call_now'])){
     // Generate HTML
     $cards_html = "";
     session_start();
+    $test = $_GET["id"];
     if (empty($_SESSION['user'])){
         header("Location: index.php");
     }
