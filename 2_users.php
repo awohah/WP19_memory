@@ -20,7 +20,7 @@ foreach ($data as $key => $value){
         $obj_cards = json_decode($cards);
 
         //redirect user to game
-        header("Location: redirect2.php?id=$id");
+        header("Location: redirect2.php");
 
         $data[$key]['amount'] = $value['amount']+1;
         $data[$key]['user2'] = $_GET['user'];
