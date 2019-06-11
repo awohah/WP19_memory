@@ -6,7 +6,6 @@ if (isset($_POST['call_now'])){
     $cards = json_decode($json_file, true);
     // Generate HTML
     $cards_html = "";
-    session_start();
     if (empty($_SESSION['user'])){
         header("Location: index.php");
     }
