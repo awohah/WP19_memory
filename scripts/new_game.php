@@ -3,7 +3,6 @@ if (isset($_POST['call_now'])){
     session_start();
     $tiles = array(1,1,2,2,3,3,4,4,5,5,6,6);
     shuffle($tiles);
-    session_start();
 
     // Read cards
     $json_file_cards = file_get_contents("../data/game.json");

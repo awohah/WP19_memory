@@ -4,7 +4,6 @@ if (isset($_POST['tile_id'])){
     // Read cards
     $json_file = file_get_contents("../data/game.json");
     $cards = json_decode($json_file, true);
-    session_start();
 
     // Make tile visible
     foreach ($cards as $game => $game_value) {
