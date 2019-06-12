@@ -9,8 +9,8 @@ if (isset($_POST['image'])){
     foreach ($cards as $game => $game_value) {
         if ($game_value['id'] == ($_SESSION['id'])){
             foreach ($game_value["cards"] as $key => $value) {
-                if ($value['tile_id'] == $_POST['tile_id']) {
-                    $cards[$game]["cards"][$key]['visibility'] = 'visible';
+                if ($value['image'] == $_POST['image']) {
+                    $cards[$game]["cards"][$key]['flip'] = "visible";
                 }
             }
         }

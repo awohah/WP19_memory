@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="99a9fc85-0b66-4fb3-af70-f14ef0b0ae41" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../assignment_3/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/.idea/memory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/2_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/chat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/css/signin-up.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/data/cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/data/chat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/data/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/data/game.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/html/memory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/img/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/js/play.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/memory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/play.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/redirect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/redirect2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/scripts/game_board.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/scripts/invisible.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/scripts/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/scripts/new_game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/scripts/visible.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/tpl/body.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/tpl/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp/tpl/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp2/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp2/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fp3/.idea/fp3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fpfp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/sdfsdf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/2_users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/signin-up.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/cards.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/chat.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/game.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/matches.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/game_board.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/memory.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/play.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/validation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jsonFile.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/memory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/new_game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/play.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redirect2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/belangrijk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/endsessions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/flip.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/game_board.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/invisible.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/match.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/memory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/new_game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/visible.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tpl/body.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tpl/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tpl/head.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fpwp/.idea/fpwp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/WP19.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fp/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fp/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../fp/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/s2582562_wp19_assigment1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_1/wp19-check.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/.idea/A3-part3.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/.idea/assignment_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/data/dataa.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/scripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/simple_form.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/tpl/body_end.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/tpl/body_start.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment_3/tpl/head.php" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment_3/tpl/head.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../fp/.idea/jsLibraryMappings.xml" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/flip.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/visible.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/memory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-311">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/endsessions.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/game_board.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="556">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/invisible.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/match.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-6">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/memory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vragen">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/game.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="7804" selection-start-column="7804" selection-end-column="7804" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/invisible.php" />
+        <option value="$PROJECT_DIR$/scripts/matches.php" />
+        <option value="$PROJECT_DIR$/js/memory.js" />
+        <option value="$PROJECT_DIR$/data/cards.json" />
+        <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$PROJECT_DIR$/data/game.json" />
+        <option value="$PROJECT_DIR$/scripts/new_game.php" />
+        <option value="$PROJECT_DIR$/tpl/head.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/redirect2.php" />
+        <option value="$PROJECT_DIR$/memory.php" />
+        <option value="$PROJECT_DIR$/data/matches.json" />
+        <option value="$PROJECT_DIR$/html/memory.html" />
+        <option value="$PROJECT_DIR$/scripts/match.php" />
+        <option value="$PROJECT_DIR$/scripts/belangrijk" />
+        <option value="$PROJECT_DIR$/scripts/game_board.php" />
+        <option value="$PROJECT_DIR$/scripts/flip.php" />
+        <option value="$PROJECT_DIR$/scripts/visible.php" />
+        <option value="$PROJECT_DIR$/scripts/memory.js" />
+        <option value="$PROJECT_DIR$/vragen" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="870" />
+    <option name="y" value="15" />
+    <option name="width" value="895" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fpfp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fpfp" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="C:/nodejs/npm.cmd" />
+    <property name="nodejs_interpreter_path" value="C:/nodejs/npm.cmd" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\WP19\fpfp\data" />
+      <recent name="C:\xampp\htdocs\WP19\fpfp\public_html\scripts" />
+      <recent name="C:\xampp\htdocs\WP19\fpfp\public_html\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="99a9fc85-0b66-4fb3-af70-f14ef0b0ae41" name="Default Changelist" comment="" />
+      <created>1560261393061</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560261393061</updated>
+      <workItem from="1560261394874" duration="660000" />
+      <workItem from="1560262785520" duration="60477000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="61137000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31073827" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3161074" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" sideWeight="0.49932885" weight="0.3286119" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067115" side_tool="true" visible="true" weight="0.3286119" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.3295302" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3295302" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public_html/scripts/new_game.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/new_game.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/style.css" />
+    <entry file="file://$PROJECT_DIR$/public_html/scripts/test.php" />
+    <entry file="file://$PROJECT_DIR$/public_html/data/chat.json" />
+    <entry file="file://$PROJECT_DIR$/public_html/scripts/chat.php" />
+    <entry file="file://$PROJECT_DIR$/scripts/matches.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/tpl/body.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/tpl/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/tpl/head.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/game_board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/memory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="392" column="28" selection-start-line="392" selection-start-column="28" selection-end-line="392" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/body.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/footer.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="97" selection-start-line="13" selection-start-column="97" selection-end-line="13" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/memory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/dataa.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game_board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jsonFile.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new_game.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/play.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-530">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-664" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/belangrijk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2_users.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/new_game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-62">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/cards.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="221" selection-start-column="221" selection-end-column="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/matches.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redirect2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redirect.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/validation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/play.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/flip.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="62" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/match.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/visible.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="13" column="62" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/game.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7804" selection-start-column="7804" selection-end-column="7804" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/invisible.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vragen">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/memory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-311">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/endsessions.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/game_board.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/memory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
