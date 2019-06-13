@@ -3,14 +3,27 @@
 #login-body {
     font-family: "Open Sans";
     background: url("https://www.backgroundcheckall.com/wp-content/uploads/2017/12/2d-game-background-1.png") no-repeat center center fixed !important;
-    background-size:cover;
+    background-size:cover !important;
 }
 
 #signup-body {
     font-family: "Open Sans";
     background: url("https://www.backgroundcheckall.com/wp-content/uploads/2017/12/2d-game-background-1.png") no-repeat center center fixed;
-    background-size:cover;
+    background-size:cover !important;
 }
+
+@media only screen and (max-width: 600px) {
+    #wrapper {
+        text-align: center;
+    }
+}#login-body {
+     margin: 0 auto;
+     display: inline-flex;
+     padding-left: 20px;
+     padding-right: 20px;
+     padding-top: 10px;
+ }}
+
 
 
 #container {
