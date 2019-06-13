@@ -22,7 +22,7 @@
         echo'</div>';
     };
 ?>
-<div><a class="memory" id="playmemory" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a></div>
+<div id="playmemory-container"><a class="memory" id="playmemory" href="2_users.php?user=<?php echo $_SESSION['user']?>">Play memory!</a></div>
 
 <div id="chat-container">
     <div id="chat">

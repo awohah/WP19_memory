@@ -1,188 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+var Tile = function(x, y, face) {
+this.x = x;
+this.y = y;
+this.face = face;
+this.width = 70;
+};
 
-    <title>Memory Game</title>
+Tile.prototype.drawFaceDown = function() {
+fill(214, 247, 202);
+strokeWeight(2);
+rect(this.x, this.y, this.width, this.width, 10);
+image(getImage("avatars/leaf-green"), this.x, this.y, this.width, this.width);
+this.isFaceUp = false;
+};
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<section class="memory-game">
-    <div class="memory-card" data-framework="aurelia">
-        <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="aurelia">
-        <img class="front-face" src="img/aurelia.svg" alt="Aurelia" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
+Tile.prototype.drawFaceUp = function() {
+fill(214, 247, 202);
+strokeWeight(2);
+rect(this.x, this.y, this.width, this.width, 10);
+image(this.face, this.x, this.y, this.width, this.width);
+this.isFaceUp = true;
+};
 
-    <div class="memory-card" data-framework="vue">
-        <img class="front-face" src="img/vue.svg" alt="Vue" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="vue">
-        <img class="front-face" src="img/vue.svg" alt="Vue" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
+Tile.prototype.isUnderMouse = function(x, y) {
+return x >= this.x && x <= this.x + this.width  &&
+y >= this.y && y <= this.y + this.width;
+};
 
-    <div class="memory-card" data-framework="angular">
-        <img class="front-face" src="img/angular.svg" alt="Angular" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="angular">
-        <img class="front-face" src="img/angular.svg" alt="Angular" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
+// Global config
+var NUM_COLS = 5;
+var NUM_ROWS = 4;
 
-    <div class="memory-card" data-framework="ember">
-        <img class="front-face" src="img/ember.svg" alt="Ember" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="ember">
-        <img class="front-face" src="img/ember.svg" alt="Ember" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
+// Declare an array of all possible faces
+var faces = [
+getImage("avatars/leafers-seed"),
+getImage("avatars/leafers-seedling"),
+getImage("avatars/leafers-sapling"),
+getImage("avatars/leafers-tree"),
+getImage("avatars/leafers-ultimate"),
+getImage("avatars/marcimus"),
+getImage("avatars/mr-pants"),
+getImage("avatars/mr-pink"),
+getImage("avatars/old-spice-man"),
+getImage("avatars/robot_female_1")
+];
 
-    <div class="memory-card" data-framework="backbone">
-        <img class="front-face" src="img/backbone.svg" alt="Backbone" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="backbone">
-        <img class="front-face" src="img/backbone.svg" alt="Backbone" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
+// Make an array which has 2 of each, then randomize it
+var possibleFaces = faces.slice(0);
+var selected = [];
+for (var i = 0; i < (NUM_COLS * NUM_ROWS) / 2; i++) {
+// Randomly pick one from the array of remaining faces
+var randomInd = floor(random(possibleFaces.length));
+var face = possibleFaces[randomInd];
+// Push twice onto array
+selected.push(face);
+selected.push(face);
+// Remove from array
+possibleFaces.splice(randomInd, 1);
+}
 
-    <div class="memory-card" data-framework="react">
-        <img class="front-face" src="img/react.svg" alt="React" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-    <div class="memory-card" data-framework="react">
-        <img class="front-face" src="img/react.svg" alt="React" />
-        <img class="back-face" src="img/js-badge.svg" alt="JS Badge" />
-    </div>
-</section>
+// Now we need to randomize the array
+selected.sort(function() {
+return 0.5 - Math.random();
+});
 
-<script src="scripts.js"></script>
-</body>
-</html>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
+// Create the tiles
+var tiles = [];
+for (var i = 0; i < NUM_COLS; i++) {
+for (var j = 0; j < NUM_ROWS; j++) {
+tiles.push(new Tile(i * 78 + 10, j * 78 + 40, selected.pop()));
+}
+}
 
-    body {
-        height: 100vh;
-        display: flex;
-        background: #060AB2;
-    }
+background(255, 255, 255);
 
-    .memory-game {
-        width: 640px;
-        height: 640px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        perspective: 1000px;
-    }
+// Now draw them face up
+for (var i = 0; i < tiles.length; i++) {
+tiles[i].drawFaceDown();
+}
 
-    .memory-card {
-        width: calc(25% - 10px);
-        height: calc(33.333% - 10px);
-        margin: 5px;
-        position: relative;
-        transform: scale(1);
-        transform-style: preserve-3d;
-        transition: transform .5s;
-        box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-    }
+var flippedTiles = [];
+var delayStartFC = null;
+var numTries = 0;
 
-    .memory-card:active {
-        transform: scale(0.97);
-        transition: transform .2s;
-    }
+mouseClicked = function() {
+for (var i = 0; i < tiles.length; i++) {
+if (tiles[i].isUnderMouse(mouseX, mouseY)) {
+if (flippedTiles.length < 2 && !tiles[i].isFaceUp) {
+tiles[i].drawFaceUp();
+flippedTiles.push(tiles[i]);
+if (flippedTiles.length === 2) {
+numTries++;
+if (flippedTiles[0].face === flippedTiles[1].face) {
+flippedTiles[0].isMatch = true;
+flippedTiles[1].isMatch = true;
+}
+delayStartFC = frameCount;
+loop();
+}
+}
+}
+}
+var foundAllMatches = true;
+for (var i = 0; i < tiles.length; i++) {
+foundAllMatches = foundAllMatches && tiles[i].isMatch;
+}
+if (foundAllMatches) {
+fill(0, 0, 0);
+textSize(20);
+text("You found them all in " + numTries + " tries!", 20, 375);
+}
+};
 
-    .memory-card.flip {
-        transform: rotateY(180deg);
-    }
-
-    .front-face,
-    .back-face {
-        width: 100%;
-        height: 100%;
-        padding: 20px;
-        position: absolute;
-        border-radius: 5px;
-        background: #1C7CCC;
-        backface-visibility: hidden;
-    }
-
-    .front-face {
-        transform: rotateY(180deg);
-    }
-</style>
-<script>
-    const cards = document.querySelectorAll('.memory-card');
-
-    let hasFlippedCard = false;
-    let lockBoard = false;
-    let firstCard, secondCard;
-
-    function flipCard() {
-        if (lockBoard) return;
-        if (this === firstCard) return;
-
-        this.classList.add('flip');
-
-        if (!hasFlippedCard) {
-            hasFlippedCard = true;
-            firstCard = this;
-
-            return;
-        }
-
-        secondCard = this;
-        checkForMatch();
-    }
-
-    function checkForMatch() {
-        let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
-        isMatch ? disableCards() : unflipCards();
-    }
-
-    function disableCards() {
-        firstCard.removeEventListener('click', flipCard);
-        secondCard.removeEventListener('click', flipCard);
-
-        resetBoard();
-    }
-
-    function unflipCards() {
-        lockBoard = true;
-
-        setTimeout(() => {
-            firstCard.classList.remove('flip');
-            secondCard.classList.remove('flip');
-
-            resetBoard();
-        }, 1500);
-    }
-
-    function resetBoard() {
-        [hasFlippedCard, lockBoard] = [false, false];
-        [firstCard, secondCard] = [null, null];
-    }
-
-    (function shuffle() {
-        cards.forEach(card => {
-            let randomPos = Math.floor(Math.random() * 12);
-            card.style.order = randomPos;
-        });
-    })();
-
-    cards.forEach(card => card.addEventListener('click', flipCard));
-</script>
+draw = function() {
+if (delayStartFC && (frameCount - delayStartFC) > 30) {
+for (var i = 0; i < tiles.length; i++) {
+if (!tiles[i].isMatch) {
+tiles[i].drawFaceDown();
+}
+}
+flippedTiles = [];
+delayStartFC = null;
+noLoop();
+}
+};
