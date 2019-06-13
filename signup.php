@@ -63,13 +63,16 @@
             ?>
             <button class="submit" id="submit" type="submit" name="submit">Sign up</button>
 
-            <div class="login">
-                <a href="index.php">Log in?</a>
-            </div>
+
 
         </form>
 
+
     </div>
+</div>
+
+<div class="login">
+    <a href="index.php">Log in?</a>
 </div>
 </body>
 </html>
