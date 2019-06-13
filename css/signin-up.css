@@ -188,7 +188,7 @@ button:hover {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     color: black;
     bottom: 0px;
     font-size: 10px;
