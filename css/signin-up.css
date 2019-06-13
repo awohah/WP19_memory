@@ -139,14 +139,7 @@ button:hover {
 
 .signup, .login{
     text-align: center;
-}
-
-.signup{
     margin-top:15px;
-}
-
-.login{
-    margin-top:-25px;
 }
 
 .signup a {
