@@ -2,6 +2,7 @@
 
 body{
     height: 100vh;
+    width: 100vw;
 }
 
 #button, #usr, #pw {
@@ -204,4 +205,14 @@ button:hover {
     bottom: 0px;
     font-size: 10px;
     text-align: center;
+}
+
+@media (max-width: 800px) {
+    .signup a {
+        color: black;
+    }
+
+    .login a {
+        color: black;
+    }
 }
