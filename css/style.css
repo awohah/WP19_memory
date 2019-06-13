@@ -445,8 +445,28 @@ h1 {
     h1, h3 {
         font-family: "Open Sans";
         text-align: center;
-        margin: 60px;
-        margin-bottom: 100px !important;
+        margin-bottom: 60px 60px 100px 60px;
+    }
+
+    h1{
+        margin-bottom: 20px !important;
+    }
+
+    .signout {
+        width: 20% !important;
+        font-size: 20px !important;
+    }
+
+    .text_stranger:after {
+        margin-left: -15px!important;
+    }
+
+    #row-data{
+        font-size: 24px !important;
+    }
+
+
+    .text_user:after {
+        margin-right: -15px!important;
     }
 }
-}  
