@@ -36,6 +36,10 @@ h1, h3{
     text-align: center;
 }
 
+#greeting{
+    margin: 60px 0;
+}
+
 #background{
     margin-top: 20px;
     background: url("https://res.cloudinary.com/nikola1970/image/upload/v1456692130/body-bg_ovz9eo.png") no-repeat center center fixed !important;
@@ -120,7 +124,7 @@ button,.memory, .signout, .back, #submit-text {
     text-transform: uppercase;
     text-shadow: 0 1px 1px rgba(0,0,0,0.5);
 
-   margin: 5px !important;
+    margin: 5px !important;
     border: 0px;
     color: #ffffff;
 
@@ -397,19 +401,52 @@ h1 {
 
 
 @media only screen and (max-width: 1024px) {
+
+    body{
+        height: 100vh;
+    }
+
     div#memory_board > div{
         vertical-align: middle;
         width:15vw !important;
         height:15vw !important;
     }
 
+    h1{
+        font-size: 300%!important;
+    }
 
-@media only screen and (max-width: 768px) {
+    h3 {
+        font-size: 250%!important;
+    }
+
+    #play_background {
+        background-size: auto 100% !important;
+    }
+
+    #playmemory{
+        font-size: 55px!important;
+    }
+
+    #playmemory-container{
+        text-align: center;
+    }
+
+    #chat-box {
+        max-height: 40vh;
+    }
+
     #chat {
         float: left;
-        margin-right: 5px;
+        margin: 120px 0 0 0 !important;
+        width: 100%;
     }
-    #playmemory {
-        clear: both;
+
+    h1, h3 {
+        font-family: "Open Sans";
+        text-align: center;
+        margin: 60px;
+        margin-bottom: 100px !important;
     }
-}  }
+}
+}  
