@@ -1,4 +1,3 @@
-
 <?php
 if (isset($_POST['call_now'])){
     session_start();
@@ -14,15 +13,12 @@ if (isset($_POST['call_now'])){
     foreach ($cards as $item){
         if($item['id'] == ($_SESSION['id'])){
             foreach($item["cards"] as $value){
-
-                $cards_html.= sprintf('<div id="%s" class="tile btn btn-info m-1 p-1" tile_id="%s" onclick="match()"> ',$value['tile_id'], $value['tile_id']);
-                $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="../fpfp/img/%s.jpg" align="middle" /></div>', $value['picture'], $value['visibility'], $value['picture']);
+                $cards_html.= sprintf('<div id="%s" class="tile %s btn btn-info m-1" tile_id="%s" picture="%s">', $value['tile_id'], $value['visibility'], $value['tile_id'], $value['picture']);
+                $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="./img/%s.jpg" align="middle" /></div>', $value['picture'], $value['flip'], $value['picture']);
                 $cards_html.= '</div>';
-
             }
         }
     };
-
     // Save html into array
     $export_data = [
         'html' => $cards_html
@@ -32,4 +28,3 @@ if (isset($_POST['call_now'])){
     echo json_encode($export_data);
 }
 ?>
-
