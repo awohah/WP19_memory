@@ -84,6 +84,7 @@
 }
 
 input {
+    color: black !important;
     padding: 12px;
     margin: 0px 0px 10px 0px;
     border-radius: 30px;
@@ -118,7 +119,6 @@ button {
     margin: 35px 0px 0px 0px;
     border: 0px;
     color: #ffffff;
-
 
     -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
