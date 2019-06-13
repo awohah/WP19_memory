@@ -9,7 +9,9 @@ foreach ($data as $key => $value){
     if($value['amount'] < 1 ){
         $id = $data[$key]['id'];
         $data[$key]['amount'] = $value['amount']+1;
+        $data[$key]['round'] = 0;
         $data[$key]['user1'] = $_GET['user'];
+        $data[$key]['score1'] = 0;
         $_SESSION['id'] = $id;
         header("Location: redirect2.php");
 
@@ -24,6 +26,7 @@ foreach ($data as $key => $value){
 
         $data[$key]['amount'] = $value['amount']+1;
         $data[$key]['user2'] = $_GET['user'];
+        $data[$key]['score2'] = 0;
         array_push($data, [
             'id' => $id+1,
             'amount' => 0,

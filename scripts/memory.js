@@ -12,6 +12,20 @@ function newGame() {
     });
 }
 
+function addScore() {
+    let addScore = $.post("scripts/score1.php", {round: round});
+    addScore.done(function (data) {
+        console.log("plus 1");
+    });
+}
+
+function addRound() {
+    let addRound = $.post("scripts/score1.php", {round: round});
+    addRound.done(function (data) {
+        console.log("plus 1");
+    });
+}
+
 function print_cards() {
     let cards_html = $.post("scripts/game_board.php", {call_now: "True"});
     let game_container = $('#game_board');
@@ -40,7 +54,7 @@ function flipCard(card) {
         clicked_cards.push(picture);
         tiles.push(tile_id);
         if (clicked_cards.length%2 == 0) {
-            round++;
+            addRound();
             if (clicked_cards[clicked_cards.length-2] == clicked_cards[clicked_cards.length-1]) {
                 window.setTimeout(function () {
                     $('h1').text("good job").attr("class", "alert alert-success").css("width", "40%").css("margin", "auto");
@@ -48,11 +62,7 @@ function flipCard(card) {
                     makeInvisible(tiles[tiles.length-1]);
                 }, 500);
                 matches++;
-                if (round%2 == 0){
-                    score_even+=1;
-                } else {
-                    score_uneven+=1;
-                }
+                addScore();
             } else {
                 window.setTimeout(function () {
                     $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
