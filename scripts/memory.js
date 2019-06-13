@@ -24,7 +24,6 @@ function print_cards() {
             });
         };
         if (matches === 6) {
-            console.log("end");
             $('h1').text("End of game!").attr("class", "alert alert-primary");
         }
     });
@@ -43,8 +42,8 @@ function flipCard(card) {
         if (clicked_cards.length%2 == 0) {
             round++;
             if (clicked_cards[clicked_cards.length-2] == clicked_cards[clicked_cards.length-1]) {
-                $('h1').text("good job").attr("class", "alert alert-success").css("width", "40%").css("margin", "auto");
                 window.setTimeout(function () {
+                    $('h1').text("good job").attr("class", "alert alert-success").css("width", "40%").css("margin", "auto");
                     makeInvisible(tiles[tiles.length-2]);
                     makeInvisible(tiles[tiles.length-1]);
                 }, 500);
@@ -55,8 +54,8 @@ function flipCard(card) {
                     score_uneven+=1;
                 }
             } else {
-                $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
                 window.setTimeout(function () {
+                    $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
                     flipCardBack(tiles[tiles.length-2]);
                     flipCardBack(tiles[tiles.length-1]);
                 }, 500);
