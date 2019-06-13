@@ -1,7 +1,7 @@
 function checkUser(){
     let user_input = $('#user');
     let cur_val = user_input.val();
-    let user_regex = "^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,}$";
+    let user_regex = "^(?!.*__.*)(?!.*\\.\\..*)[a-zA-Z0-9_.]+$";
     if (cur_val.match(user_regex) && cur_val !== ''){
         user_input.removeClass('is-invalid');
         user_input.addClass('is-valid');
@@ -17,7 +17,7 @@ function checkUser(){
 function checkPassword() {
     let password_input = $('#password');
     let cur_val = password_input.val();
-    let password_regex = "^(?=.*\\d).{4,8}$";
+    let password_regex = "^(?=.*\\d).{4,}$";
     if (cur_val.match(password_regex) && cur_val !== '') {
         password_input.removeClass('is-invalid');
         password_input.addClass('is-valid');

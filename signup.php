@@ -41,7 +41,7 @@
                     Looks good!
                 </div>
                 <div class="invalid-feedback">
-                    Username must contain at least one letter, at least one number, and be longer than six characters.
+                    Username can only include letters, numbers, periods and underscores.
                 </div>
             </div>
 
