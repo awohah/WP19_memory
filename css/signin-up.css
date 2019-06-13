@@ -160,6 +160,14 @@
 
 }
 
+.footer {
+    position: absolute;
+    color: black;
+    bottom: 0px;
+    font-size: 10px;
+    text-align: center;
+}
+
 @media (min-width: 800px) and (max-width: 1280px) {
     #taken_username, #wrong-password, #signup-success {
         position: absolute;
