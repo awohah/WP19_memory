@@ -23,8 +23,9 @@ function print_cards() {
                 flipCard(this);
             });
         };
-        if (matches == 6) {
+        if (matches === 6) {
             console.log("end");
+            $('h1').text("End of game!").attr("class", "alert alert-primary");
         }
     });
 }
