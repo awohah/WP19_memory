@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+#button, #usr, #pw {
+    display: none;
+}
 
 #login-body {
     font-family: "Open Sans";
@@ -13,20 +21,6 @@
     background-size:cover !important;
 }
 
-@media only screen and (max-width: 600px) {
-    #wrapper {
-        text-align: center;
-    }
-    #container {
-        display: inline;
-    }
-    #signup-body {
-        padding-left: 2px;
-        padding-right: 10px;
-    }}
-#button, #usr, #pw {
-    display: none;
-}
 
 #container {
     text-align: center;
@@ -35,8 +29,13 @@
     margin: 0 auto;
     margin-top: 5%;
     padding: 30px;
-    border-radius: 18px;
+    border-radius: 30px;
     transition:.3s;
+}
+
+.form-control{
+    border-radius: 30px;
+    padding: 20px;
 }
 
 .login-logo {
@@ -55,7 +54,6 @@
 }
 
 .signup-logo {
-
     background: url("https://www.themeparkinsider.com/assets/PROF_NewUserIcon.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -63,9 +61,7 @@
     height: 100px;
     border-radius: 60px;
     border: 4px solid #ffffff;
-    margin-left: 33%;
-
-
+    margin: 0 auto;
     -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
@@ -88,13 +84,11 @@
     text-shadow: 0 1px 1px rgba(0,0,0,0.7);
     text-align: center;
     margin-bottom:40px;
-    margin-left: -5%;
 }
 
-.input {
-    color: black !important;
+input {
     padding: 12px;
-    margin-left: 12%;
+    margin: 0px 0px 10px 0px;
     border-radius: 30px;
     width: 250px;
     outline: none;
@@ -105,11 +99,64 @@
     transition: .2s;
 }
 
-.input:hover, .input:focus {
+input:hover, input:focus {
     -moz-box-shadow: 0 0 23px 0 rgba(255,255,255,0.5);
     -webkit-box-shadow: 0 0 23px 0 rgba(255,255,255,0.5);
     box-shadow: 0 0 23px 0 rgba(255,255,255,0.5);
     transform: scale(1.05);
+}
+
+button {
+    padding: 12px;
+    border-radius: 30px;
+    width: 275px;
+    background-color: rgba(0,0,0,.5);
+
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 11px;
+    text-transform: uppercase;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+
+    margin: 35px 0px 0px 0px;
+    border: 0px;
+    color: #ffffff;
+
+
+    -moz-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.25);
+    outline: none;
+    cursor: pointer;
+
+    transition: .3s;
+    opacity: 0.7;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+.signup, .login{
+    text-align: center;
+}
+
+.signup{
+    margin-top:15px;
+}
+
+.login{
+    margin-top:-25px;
+}
+
+.signup a {
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.login a {
+    color: #ffffff;
+    font-size: 12px;
 }
 
 #sub {
@@ -143,21 +190,18 @@
     opacity: 1;
 }
 
-.signup, .login{
+@media (min-width: 800px) and (max-width: 1280px) {
+    #taken_username, #wrong-password, #signup-success {
+        position: absolute;
+        bottom: 85px;
+        padding-left: auto;
+        padding-right: auto;
+    }
 
-}
-
-.signup a {
-    color: #ffffff;
-    font-size: 12px;
-}
-
-.login a {
-    color: #ffffff;
-    font-size: 15px;
-    margin-left: 48%;
-
-
+    body{
+        height: 100vh;
+        width:  100vw;
+    }
 }
 
 .footer {
@@ -168,11 +212,12 @@
     text-align: center;
 }
 
-@media (min-width: 800px) and (max-width: 1280px) {
-    #taken_username, #wrong-password, #signup-success {
-        position: absolute;
-        bottom: 85px;
-        padding-left: auto;
-        padding-right: auto;
+@media (max-width: 800px) {
+    .signup a {
+        color: black;
+    }
+
+    .login a {
+        color: black;
     }
 }
