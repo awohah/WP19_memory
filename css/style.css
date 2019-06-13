@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+
+
 *{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -366,16 +368,41 @@ div#memory_board > div{
 }
 
 #game_board {
-    max-width: 80%;
+
+    margin: auto;
+    max-width: 60%;
+}
+
+
+#game_board > div {
+    height: 21%;
+    width: 23%;
+    margin: auto;
+
+}
+
+.images {
+    width: 100%;
+    height: 100%;
     margin: auto;
 }
+
+h1 {
+    font-family: 'Patua One', cursive;
+    color: #382307;
+    class="alert alert-info"
+
+}
+
+
 
 @media only screen and (max-width: 1024px) {
     div#memory_board > div{
         vertical-align: middle;
         width:15vw !important;
         height:15vw !important;
-    }}
+    }
+
 
 @media only screen and (max-width: 768px) {
     #chat {
@@ -385,4 +412,4 @@ div#memory_board > div{
     #playmemory {
         clear: both;
     }
-}
+}  }

@@ -16,7 +16,7 @@ if (isset($_POST['call_now'])){
             foreach($item["cards"] as $value){
 
                 $cards_html.= sprintf('<div id="%s" class="tile btn btn-info m-1 p-1" tile_id="%s" onclick="match()"> ',$value['tile_id'], $value['tile_id']);
-                $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="../fpfp/img/%s.jpg" align="middle" /></div>', $value['picture'], $value['visibility'], $value['picture']);
+                $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="./img/%s.jpg" align="middle" /></div>', $value['picture'], $value['visibility'], $value['picture']);
                 $cards_html.= '</div>';
 
             }
