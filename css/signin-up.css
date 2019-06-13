@@ -197,6 +197,11 @@ button:hover {
         padding-left: auto;
         padding-right: auto;
     }
+
+    body{
+        height: 100vh;
+        width:  100vw;
+    }
 }
 
 .footer {
