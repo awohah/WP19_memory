@@ -1,17 +1,17 @@
 <?php
 if (isset($_POST['tile_id'])){
     session_start();
-    // Read cards
+    // Read games
     $json_file = file_get_contents("../data/game.json");
-    $cards = json_decode($json_file, true);
+    $games = json_decode($json_file, true);
 
-    // Make tile invisible
-    foreach ($cards as $game => $game_value) {
+    // Make both tile and picture invisible
+    foreach ($games as $game => $game_value) {
         if ($game_value['id'] == ($_SESSION['id'])){
             foreach ($game_value["cards"] as $key => $value) {
                 if ($value['tile_id'] == $_POST['tile_id']) {
-                    $cards[$game]["cards"][$key]['visibility'] = 'invisible';
-                    $cards[$game]["cards"][$key]['flip'] = 'invisible';                    
+                    $games[$game]["cards"][$key]['visibility'] = 'invisible';
+                    $games[$game]["cards"][$key]['flip'] = 'invisible';                    
                 }
             }
         }
@@ -19,6 +19,6 @@ if (isset($_POST['tile_id'])){
 
     // Save to external file
     $json_file = fopen('../data/game.json', 'w');
-    fwrite($json_file, json_encode($cards));
+    fwrite($json_file, json_encode($games));
     fclose($json_file);
 }

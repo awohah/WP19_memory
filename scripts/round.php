@@ -5,6 +5,7 @@ if (isset($_POST['call_now'])){
     $json_file = file_get_contents("../data/game.json");
     $games = json_decode($json_file, true);
 
+    // Add 1 to round
     foreach ($games as $key => $value){
         if($value['id'] == ($_SESSION['id'])){
             $games[$key]['round'] += 1;

@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST['call_now'])){
     session_start();
-    // Read cards
+    // Read games
     $json_file = file_get_contents("../data/game.json");
     $cards = json_decode($json_file, true);
     // Generate HTML
@@ -9,10 +9,11 @@ if (isset($_POST['call_now'])){
     if (empty($_SESSION['user'])){
         header("Location: index.php");
     }
-
+    // Print status of game and user feedback
     foreach ($cards as $item){
         if($item['id'] == ($_SESSION['id'])){
             if(isset($item['user2'])){
+                // If user2 is present in game.json, print game status so users know they can start
                 if($item['round']%2==0){
                     $cards_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user2']);
                 } else {
@@ -21,6 +22,7 @@ if (isset($_POST['call_now'])){
                 $cards_html.= sprintf('<div id="round">Round: %s</div>', $item['round']);
                 $cards_html.= sprintf('<div class="score">Score %s: %s</div>', $item['user1'], $item['score1']);
                 $cards_html.= sprintf('<div class="score">Score %s: %s</div>', $item['user2'], $item['score2']);
+                    // If the total score equals 6, all tiles have been matched, so end result will be printed
                     if($item['score1']+$item['score2']==6) {
                         $cards_html.= sprintf('<div id="game_over">Game over</div>');
                         if($item['score1'] > $item['score2']) {
@@ -30,6 +32,7 @@ if (isset($_POST['call_now'])){
                         }
                     }
             } else {
+                // Let user know when there is no second player yet
                 $cards_html.= sprintf('<h3 id="wait">But first, please wait for another user</h3>');
             };
         
