@@ -17,12 +17,12 @@ if (isset($_POST['call_now'])){
                 if($item['round']%2==0){
 
                     if($item['user2'] == ($_SESSION['user'])){
-                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!</div>", $item['user2']);
+                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!!</div>", $item['user2']);
                     }else{
                         $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user2']);}
                 } else {
                     if($item['user1'] == ($_SESSION['user'])){
-                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!</div>", $item['user1']);
+                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!!</div>", $item['user1']);
                     }else{
                     $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user1']);}
                 };
