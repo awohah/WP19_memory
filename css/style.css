@@ -54,7 +54,7 @@ h1, h3{
     background-size:cover;
 }
 
-#playmemory {
+#playmemory{
     opacity: 0.9!important;
     border: 3px solid rgb(17, 151, 190, 0.7);
     padding: 50px!important;
@@ -73,6 +73,37 @@ h1, h3{
     cursor: pointer;
 
 }
+
+#playagain a{
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    opacity: 0.9!important;
+    border: 3px solid rgb(17, 151, 190, 0.7);
+    padding: 20px!important;
+    background-color: rgb(86, 187, 38, 0.7);
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px beige;
+}
+
+#playagain a:hover{
+    color: navy;
+    text-decoration: none;
+}
+
+#playagain{
+    margin: 35px auto;
+    text-align: center;
+    position: relative;
+    animation-name: shake;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    cursor: pointer;
+}
+
 
 @keyframes shakeAnim {
     0% {left: 0}
