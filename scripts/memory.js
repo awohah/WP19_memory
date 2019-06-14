@@ -48,13 +48,13 @@ function flipCard(card) {
                     $('h1').text("good job").attr("class", "alert alert-success").css("width", "40%").css("margin", "auto");
                     makeInvisible(tiles[tiles.length-2]);
                     makeInvisible(tiles[tiles.length-1]);
-                }, 500);
+                }, 800);
             } else {
                 window.setTimeout(function () {
                     $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
                     flipCardBack(tiles[tiles.length-2]);
                     flipCardBack(tiles[tiles.length-1]);
-                }, 500);
+                }, 800);
             };
         };
     };
@@ -87,5 +87,5 @@ $(function() {
     window.setInterval(function () {
         print_cards();
         print_scores();
-    }, 200);
+    }, 1000);
 });
