@@ -192,7 +192,6 @@ button:hover {
 @media (min-width: 800px) and (max-width: 1280px) {
     #taken_username, #wrong-password, #signup-success {
         position: absolute;
-        bottom: 85px;
         padding-left: auto;
         padding-right: auto;
     }
