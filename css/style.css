@@ -401,21 +401,53 @@ h1 {
 
 #round, .score {
     font-family: 'Helvetica';
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
-    display: block;
-    position: absolute;
-    color: #17A2B8;
+    display: flex;
+    font-weight: bold;
 }
 
 .turn {
     font-family: 'Helvetica';
-    display: block;
-    position: absolute;
-    font-size: 30px;
-    padding-left: 30%;
-    color: #17A2B8;
-    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -50px;
+}
+
+.turn, #wait {
+    font-weight: bold;
+    -webkit-animation: color-change 3s infinite;
+    -moz-animation: color-change 3s infinite;
+    -o-animation: color-change 3s infinite;
+    -ms-animation: color-change 3s infinite;
+    animation: color-change 3s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-moz-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-ms-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@-o-keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+}
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
 }
 
 .wait {
@@ -459,6 +491,25 @@ h1 {
 
     #playmemory-container{
         text-align: center;
+    }
+
+    .turn {
+        font-family: 'Helvetica';
+        font-weight: bold;
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 0px !important;
+    }
+
+    #game_board {
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    #game_board > div {
+        height: 12% !important;
+        width: 22% !important;
+        margin: auto;
     }
 
     #chat-box {
