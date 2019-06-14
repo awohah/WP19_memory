@@ -27,7 +27,7 @@ if (isset($_POST['call_now'])){
                         $scores_html.= sprintf('<div id="game_over">Game over</div>');
                         if($item['score1'] > $item['score2']) {
                             $scores_html.= sprintf('<div class="won">%s won!</div>', $item['user1']);
-                        } if else ($item['score2'] > $item['score1']) {
+                        } elseif ($item['score2'] > $item['score1']) {
                             $scores_html.= sprintf('<div class="won">%s won!</div>', $item['user2']);
                         } else {
                             $scores_html.= sprintf("<div class='won'>It's a tie!</div>");
