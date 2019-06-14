@@ -189,10 +189,18 @@ button:hover {
 
 .footer {
     position: fixed;
-    color: black;
-    bottom: 0px;
-    font-size: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #439940;
+    color: #0D763C;
     text-align: center;
+    font-size: 12px;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media (max-width: 800px) {

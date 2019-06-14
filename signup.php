@@ -74,6 +74,7 @@
 </div>
 
 </body>
+<?php include __DIR__ . '/tpl/footer.php'; ?>
 </html>
 
 
