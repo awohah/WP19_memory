@@ -27,15 +27,16 @@ if (isset($_POST['call_now'])){
                         $scores_html.= sprintf('<div id="game_over">Game over</div>');
                         if($item['score1'] > $item['score2']) {
                             $scores_html.= sprintf('<div class="won">%s won!</div>', $item['user1']);
-                        } else {
+                        } if else ($item['score2'] > $item['score1']) {
                             $scores_html.= sprintf('<div class="won">%s won!</div>', $item['user2']);
+                        } else {
+                            $scores_html.= sprintf("<div class='won'>It's a tie!</div>");
                         }
                     }
             } else {
                 // Let user know when there is no second player yet
                 $scores_html.= sprintf('<h3 id="wait">But first, please wait for another user</h3>');
             };
-        
         }
     };
     // Save html into array
