@@ -13,6 +13,11 @@ if (isset($_POST['call_now'])){
     foreach ($cards as $item){
         if($item['id'] == ($_SESSION['id'])){
             if(isset($item['user2'])){
+                if($item['round']%2==0){
+                    $cards_html.= sprintf("<div>It's %s's turn</div>", $item['user2']);
+                } else {
+                    $cards_html.= sprintf("<div>It's %s's turn</div>", $item['user1']);
+                };
                 $cards_html.= sprintf('<div>Round: %s</div>', $item['round']);
                 $cards_html.= sprintf('<div>Score %s: %s</div>', $item['user1'], $item['score1']);
                 $cards_html.= sprintf('<div>Score %s: %s</div>', $item['user2'], $item['score2']);
