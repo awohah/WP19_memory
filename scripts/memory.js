@@ -66,7 +66,7 @@ function flipCard(card) {
                     $('h1').text("wrong").attr("class", "alert alert-danger invisible").css("width", "40%").css("margin", "auto");
                     flipCardBack(tiles[tiles.length-2]);
                     flipCardBack(tiles[tiles.length-1]);
-                }, 1000);
+                }, 500);
             };
         };
     };
