@@ -14,23 +14,23 @@ if (isset($_POST['call_now'])){
         if($item['id'] == ($_SESSION['id'])){
             if(isset($item['user2'])){
                 if($item['round']%2==0){
-                    $cards_html.= sprintf("<div>It's %s's turn</div>", $item['user2']);
+                    $cards_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user2']);
                 } else {
-                    $cards_html.= sprintf("<div>It's %s's turn</div>", $item['user1']);
+                    $cards_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user1']);
                 };
-                $cards_html.= sprintf('<div>Round: %s</div>', $item['round']);
-                $cards_html.= sprintf('<div>Score %s: %s</div>', $item['user1'], $item['score1']);
-                $cards_html.= sprintf('<div>Score %s: %s</div>', $item['user2'], $item['score2']);
+                $cards_html.= sprintf('<div id="round">Round: %s</div>', $item['round']);
+                $cards_html.= sprintf('<div class="score">Score %s: %s</div>', $item['user1'], $item['score1']);
+                $cards_html.= sprintf('<div class="score">Score %s: %s</div>', $item['user2'], $item['score2']);
                     if($item['score1']+$item['score2']==6) {
-                        $cards_html.= sprintf('<div>Game over</div>');
+                        $cards_html.= sprintf('<div id="game_over">Game over</div>');
                         if($item['score1'] > $item['score2']) {
-                            $cards_html.= sprintf('<div>%s won!</div>', $item['user1']);
+                            $cards_html.= sprintf('<div class="won">%s won!</div>', $item['user1']);
                         } else {
-                            $cards_html.= sprintf('<div>%s won!</div>', $item['user2']);
+                            $cards_html.= sprintf('<div class="won">%s won!</div>', $item['user2']);
                         }
                     }
             } else {
-                $cards_html.= sprintf('<h3>But first, please wait for another user</h3>');
+                $cards_html.= sprintf('<h3 id="wait">But first, please wait for another user</h3>');
             };
         
         }
