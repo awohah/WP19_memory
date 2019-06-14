@@ -1,28 +1,20 @@
 let clicked_cards = [];
 let tiles = [];
-let matches = 0;
-let round = 0;
-let score_even = 0;
-let score_uneven = 0;
 
 function newGame() {
     let new_game = $.post("scripts/new_game.php", {call_now: "True"});
     new_game.done(function (data) {
         print_cards();
+        print_scores();
     });
 }
 
-function addScore() {
-    let addScore = $.post("scripts/score1.php", {round: round});
-    addScore.done(function (data) {
-        console.log("plus 1");
-    });
-}
-
-function addRound() {
-    let addRound = $.post("scripts/score1.php", {round: round});
-    addRound.done(function (data) {
-        console.log("plus 1");
+function print_scores() {
+    let scores_html = $.post("scripts/print_scores.php", {call_now: "True"});
+    let scores_container = $('#scores');
+    scores_html.done(function(data) {
+        scores_container.empty();
+        scores_container.append(data.html);
     });
 }
 
@@ -32,14 +24,9 @@ function print_cards() {
     cards_html.done(function(data) {
         game_container.empty();
         game_container.append(data.html);
-        if (matches < 6) {
-            $('.tile').click(function () {
-                flipCard(this);
-            });
-        };
-        if (matches === 6) {
-            $('h1').text("End of game!").attr("class", "alert alert-primary");
-        }
+        $('.tile').click(function () {
+            flipCard(this);
+        });
     });
 }
 
@@ -54,15 +41,14 @@ function flipCard(card) {
         clicked_cards.push(picture);
         tiles.push(tile_id);
         if (clicked_cards.length%2 == 0) {
-            addRound();
+            $.post("scripts/round.php", {call_now: "True"});
             if (clicked_cards[clicked_cards.length-2] == clicked_cards[clicked_cards.length-1]) {
+                $.post("scripts/score1.php", {call_now: "True"});
                 window.setTimeout(function () {
                     $('h1').text("good job").attr("class", "alert alert-success").css("width", "40%").css("margin", "auto");
                     makeInvisible(tiles[tiles.length-2]);
                     makeInvisible(tiles[tiles.length-1]);
                 }, 500);
-                matches++;
-                addScore();
             } else {
                 window.setTimeout(function () {
                     $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
@@ -100,5 +86,6 @@ $(function() {
     newGame();
     window.setInterval(function () {
         print_cards();
+        print_scores();
     }, 2000);
 });
