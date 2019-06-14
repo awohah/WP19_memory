@@ -5,6 +5,22 @@ body{
     width: 100vw;
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #439940;
+    color: #0D763C;
+    text-align: center;
+    font-size: 12px !important;
+}
+
+p {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+
 #button, #usr, #pw {
     display: none;
 }
@@ -185,22 +201,6 @@ button:hover {
         height: 100vh;
         width:  100vw;
     }
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #439940;
-    color: #0D763C;
-    text-align: center;
-    font-size: 12px;
-}
-
-p {
-    margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 @media (max-width: 800px) {

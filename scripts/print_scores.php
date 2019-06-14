@@ -15,9 +15,16 @@ if (isset($_POST['call_now'])){
             if(isset($item['user2'])){
                 // If user2 is present in game.json, print game status so users know they can start
                 if($item['round']%2==0){
-                    $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user2']);
+
+                    if($item['user2'] == ($_SESSION['user'])){
+                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!</div>", $item['user2']);
+                    }else{
+                        $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user2']);}
                 } else {
-                    $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user1']);
+                    if($item['user1'] == ($_SESSION['user'])){
+                        $scores_html.= sprintf("<div class='yourturn'>It's your turn %s!</div>", $item['user1']);
+                    }else{
+                    $scores_html.= sprintf("<div class='turn'>It's %s's turn</div>", $item['user1']);}
                 };
                 $scores_html.= sprintf('<div id="round">Round: %s</div>', $item['round']);
                 $scores_html.= sprintf('<div class="score">Score %s: %s</div>', $item['user1'], $item['score1']);
