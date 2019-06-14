@@ -13,10 +13,13 @@ if (isset($_POST['call_now'])){
     // Print each card in the current game with the correct visibility of the tile and the picture
     foreach ($games as $item){
         if($item['id'] == ($_SESSION['id'])){
-            foreach($item["cards"] as $value){
-                $cards_html.= sprintf('<div id="%s" class="tile %s btn btn-info m-1" tile_id="%s" picture="%s">', $value['tile_id'], $value['visibility'], $value['tile_id'], $value['picture']);
-                $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="./img/%s.jpg" align="middle" /></div>', $value['picture'], $value['flip'], $value['picture']);
-                $cards_html.= '</div>';
+        	// Only print game board if second user is online
+            if(isset($item['user2'])){
+                foreach($item["cards"] as $value){
+                    $cards_html.= sprintf('<div id="%s" class="tile %s btn btn-info m-1" tile_id="%s" picture="%s">', $value['tile_id'], $value['visibility'], $value['tile_id'], $value['picture']);
+                    $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="./img/%s.jpg" align="middle" /></div>', $value['picture'], $value['flip'], $value['picture']);
+                    $cards_html.= '</div>';
+                }
             }
         }
     };
