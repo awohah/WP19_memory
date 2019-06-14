@@ -7,7 +7,7 @@ if (isset($_POST['call_now'])){
     // Generate HTML
     $cards_html = "";
     if (empty($_SESSION['user'])){
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
 
     // Print each card in the current game with the correct visibility of the tile and the picture
@@ -17,7 +17,7 @@ if (isset($_POST['call_now'])){
             if(isset($item['user2'])){
                 foreach($item["cards"] as $value){
                     $cards_html.= sprintf('<div id="%s" class="tile %s btn btn-info m-1" tile_id="%s" picture="%s">', $value['tile_id'], $value['visibility'], $value['tile_id'], $value['picture']);
-                    $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="./img/%s.jpg" align="middle" /></div>', $value['picture'], $value['flip'], $value['picture']);
+                    $cards_html.= sprintf('<div id="%s" class="%s"><img class="images"  src="../img/%s.jpg" align="middle" /></div>', $value['picture'], $value['flip'], $value['picture']);
                     $cards_html.= '</div>';
                 }
             }

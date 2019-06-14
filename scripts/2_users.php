@@ -1,6 +1,6 @@
 <?php
 
-$jsonString = file_get_contents('data/game.json');
+$jsonString = file_get_contents('../data/game.json');
 $data = json_decode($jsonString, true);
 $elementCount  = count($data);
 session_start();
@@ -18,7 +18,7 @@ foreach ($data as $key => $value){
     }elseif($value['amount'] < 2 ){
         $id = $data[$key]['id'];
         $_SESSION['id'] = $id;
-        $cards = file_get_contents('data/cards.json');
+        $cards = file_get_contents('../data/cards.json');
         $obj_cards = json_decode($cards);
 
         //redirect user to game
@@ -32,7 +32,7 @@ foreach ($data as $key => $value){
             'amount' => 0,
             'cards' =>  $obj_cards
         ]);
-        $json_file = fopen('data/game.json', 'w');
+        $json_file = fopen('../data/game.json', 'w');
         fwrite($json_file, json_encode($data));
         fclose($json_file);
     }
@@ -40,4 +40,4 @@ foreach ($data as $key => $value){
 
 
 $newJsonString = json_encode($data);
-file_put_contents('data/game.json', $newJsonString);
+file_put_contents('../data/game.json', $newJsonString);

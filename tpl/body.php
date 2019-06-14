@@ -4,7 +4,7 @@
 
     <div id="container">
 
-        <form action="login.php" method="POST">
+        <form action="../scripts/login.php" method="POST">
 
             <div class="login-logo"></div>
             <div class="login-title">Login</div>
@@ -20,5 +20,5 @@
             <button id="sub" type="submit" name="submit">Log in</button>
 
             <div class="signup">
-                <a href="signup.php">Sign up?</a>
+                <a href="../scripts/signup.php">Sign up?</a>
             </div>

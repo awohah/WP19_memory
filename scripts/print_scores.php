@@ -39,7 +39,7 @@ if (isset($_POST['call_now'])){
                         } else {
                             $scores_html.= sprintf("<div class='won'>It's a tie!</div>");
                         }
-                        $scores_html.= sprintf('<div><a href="play.php">Play another game or chat with your friends</a></div>');
+                        $scores_html.= sprintf('<div id="playagain"><a href="play.php">Play another game or chat with your friends</a></div>');
                     }
             } else {
                 // Let user know when there is no second player yet

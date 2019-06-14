@@ -1,4 +1,4 @@
-<?php $json_file = file_get_contents("data/chat.json");
+<?php $json_file = file_get_contents("../data/chat.json");
 $old_messages = json_decode($json_file, true);
 $old_messages = array_reverse($old_messages);
 
