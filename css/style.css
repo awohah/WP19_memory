@@ -407,7 +407,7 @@ h1 {
     font-weight: bold;
 }
 
-.turn {
+.turn, .yourturn{
     font-family: 'Helvetica';
     font-weight: bold;
     text-align: center;
@@ -415,7 +415,7 @@ h1 {
     margin-bottom: -50px;
 }
 
-.turn, #wait {
+.yourturn, #wait {
     font-weight: bold;
     -webkit-animation: color-change 3s infinite;
     -moz-animation: color-change 3s infinite;
