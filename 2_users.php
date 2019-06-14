@@ -9,7 +9,7 @@ foreach ($data as $key => $value){
     if($value['amount'] < 1 ){
         $id = $data[$key]['id'];
         $data[$key]['amount'] = $value['amount']+1;
-        $data[$key]['round'] = 0;
+        $data[$key]['round'] = 1;
         $data[$key]['user1'] = $_GET['user'];
         $data[$key]['score1'] = 0;
         $_SESSION['id'] = $id;
