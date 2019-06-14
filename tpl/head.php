@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/signin-up.css">
     <script type="text/javascript" src="data/data.json"></script>
-    <script type="text/javascript" src="js/validation.js"></script>
+    <script type="text/javascript" src="../scripts/validation.js"></script>
 
 </head>
 

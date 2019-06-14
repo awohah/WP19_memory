@@ -5,7 +5,7 @@
 
     <title>Sign-up</title>
 
-    <link rel="stylesheet" type="text/css" href="css/signin-up.css">
+    <link rel="stylesheet" type="text/css" href="../css/signin-up.css">
 </head>
 
 <body id="signup-body">
