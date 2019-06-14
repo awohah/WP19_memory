@@ -94,6 +94,29 @@ button:hover, .signout:hover, .back:hover {
     font-size: 12px;
 }
 
+#round, .score {
+    font-family: 'Helvetica';
+    font-size: 20px;
+    text-align: right;
+    display: block;
+    position: absolute;
+    color: #17A2B8;
+}
+
+.turn {
+    font-family: 'Helvetica';
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    padding-left: 30%;
+    color: #17A2B8;
+    margin-top: 15px;
+}
+
+.wait {
+    color: #17A2B8;
+}
+
 /* FULL GAME ALERT */
 
 .full{
