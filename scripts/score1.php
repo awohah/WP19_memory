@@ -1,18 +1,16 @@
 <?php
-if (isset($_POST['round'])){
+if (isset($_POST['call_now'])){
     session_start();
     // Read games
     $json_file = file_get_contents("../data/game.json");
     $games = json_decode($json_file, true);
 
-
-    foreach ($games as $game => $game_value) {
-        if ($game_value['id'] == ($_SESSION['id'])){
-            if ($game_value["round"]%2 == 0) {
-                $games[$game]["score1"] = $game_value['score1']+1;
-                } else {
-                    $games[$game]["score2"] = $game_value['score2']+1;
-                }               
+    foreach ($games as $key => $value){
+        if($value['id'] == ($_SESSION['id'])){
+            if($value['round']%2==0){
+                $games[$key]['score1'] += 1;
+            } else {
+                $games[$key]['score2'] += 1;
             }
         }
     };
