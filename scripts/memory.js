@@ -58,7 +58,7 @@ function flipCard(card) {
                     $('h1').text("good job").attr("class", "alert alert-success invisible").css("width", "40%").css("margin", "auto");
                     makeInvisible(tiles[tiles.length-2]);
                     makeInvisible(tiles[tiles.length-1]);
-                }, 900);
+                }, 500);
             // If picture ids don't match, make pictures invisible again and give user feedback
             } else {
                 $('h1').text("wrong").attr("class", "alert alert-danger").css("width", "40%").css("margin", "auto");
@@ -66,7 +66,7 @@ function flipCard(card) {
                     $('h1').text("wrong").attr("class", "alert alert-danger invisible").css("width", "40%").css("margin", "auto");
                     flipCardBack(tiles[tiles.length-2]);
                     flipCardBack(tiles[tiles.length-1]);
-                }, 900);
+                }, 500);
             };
         };
     };
