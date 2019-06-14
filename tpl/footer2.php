@@ -13,5 +13,4 @@
 </body>
 <script type="text/javascript" src="data/data.json"></script>
 <script type="text/javascript" src="js/validation.js"></script>
-</html>
 
